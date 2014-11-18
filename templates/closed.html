@@ -9,10 +9,12 @@
     <div id="details">{{details}}</div>
     
 
+    {% if is_closed %}
     <a href="#_" class="egg" id="thass">
       <img src="{{url_for('static',filename='egg.jpg')}}">
     </a>
     <script type="text/javascript" src="{{url_for('static',filename='cheet.min.js')}}"></script>
     <script type="text/javascript" src="{{url_for('static',filename='scripts.js')}}"></script>
+    {% endif %}
 </body>
 </html>

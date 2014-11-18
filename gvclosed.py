@@ -11,14 +11,16 @@ def index():
         req = urlopen(req)
         soup = BeautifulSoup(req.read())
         closed_div = soup.find("div", {"id": "gvsu-crisis_alert"})
+        is_closed = False
         if closed_div:
             closed_div.h2.extract()
             details = closed_div.text
             closed = "Yes."
+            is_closed = True
         else:
             closed = "No."
             details = ""
-        return render_template('closed.html',closed=closed,details=details)
+        return render_template('closed.html',closed=closed,details=details,is_closed=is_closed)
 
 if __name__ == "__main__":
     app.run()
