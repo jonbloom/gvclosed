@@ -12,14 +12,11 @@
         <div class="fb-share-button" data-href="http://isgvclosed.com" data-layout="button_count"></div>
         <a href="https://twitter.com/share" class="twitter-share-button" data-url="http://isgvclosed.com" data-via="jonbloom_" data-hashtags="isgvclosed" data-dnt="true">Tweet</a>
     </div>
-
-    {% if is_closed %}
     <a href="#_" class="egg" id="thass">
       <img src="{{url_for('static',filename='egg.jpg')}}">
     </a>
     <script type="text/javascript" src="{{url_for('static',filename='cheet.min.js')}}"></script>
     <script type="text/javascript" src="{{url_for('static',filename='scripts.js')}}"></script>
-    {% endif %}
 <div id="fb-root"></div>
 
 <script>
