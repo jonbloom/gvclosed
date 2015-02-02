@@ -32,6 +32,12 @@ body{
     /** Unhide lightbox **/
     display: block;
 }
+#users{
+    font-size: 50px;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+}
 @media screen and (min-width:768px){
     #is_it_closed{
         top: 30%;

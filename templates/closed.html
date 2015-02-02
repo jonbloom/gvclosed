@@ -1,12 +1,13 @@
-
 <html>
 <head>
     <title>Is GV Closed?</title>
     <link rel="stylesheet" type="text/css" href="{{url_for('static',filename='styles.css')}}">
+    <link rel="icon" type="image/png" href="{{url_for('static',filename='favicon.png')}}">
 </head>
 <body>
     <div id="is_it_closed">{{closed}}</div>
     <div id="details">{{details}}</div>
+    <div id="users">{{users}} people here.</div>
     
 
     {% if is_closed %}
