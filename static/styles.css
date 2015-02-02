@@ -38,6 +38,7 @@ body{
     bottom: 0;
     right: 0;
 }
+
 @media screen and (min-width:768px){
     #is_it_closed{
         top: 30%;

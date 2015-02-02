@@ -38,9 +38,9 @@ def index():
 
 
 def get_actice_users():
-    return service.data().realtime().get(
+    return int(service.data().realtime().get(
       ids=views,
-      metrics=metrics).execute()['totalsForAllResults'][metrics]
+      metrics=metrics).execute()['totalsForAllResults'][metrics])+1
 
 if __name__ == "__main__":
     app.run()
